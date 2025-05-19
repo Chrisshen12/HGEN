@@ -40,9 +40,6 @@ def load_DBLP(seed=42,dataname='a',path=''):
 		x = dataset['author'].x
 		#print("x",x.shape)
 		y = dataset['author'].y
-		# APA = torch.load('combined_author.pt')['APA']
-		# APTPA = torch.load('combined_author.pt')['APTPA']
-		# APCPA = torch.load('combined_author.pt')['APCPA']
 		APA = dataset['author', 'metapath_0', 'author'].edge_index
 		APTPA = dataset['author', 'metapath_1', 'author'].edge_index
 		APCPA = dataset['author', 'metapath_2', 'author'].edge_index
@@ -52,30 +49,6 @@ def load_DBLP(seed=42,dataname='a',path=''):
 		data_APA = Data(x=x, edge_index=APA, y=y)
 		data_APTPA = Data(x=x, edge_index=APTPA, y=y)
 		data_APCPA = Data(x=x, edge_index=APCPA, y=y)
-		# data_APA = Data(x=x, edge_index=dense_to_sparse(APA.fill_diagonal_(1))[0], y=y)
-		# data_APTPA = Data(x=x, edge_index=dense_to_sparse(APTPA.fill_diagonal_(1))[0], y=y)
-		# data_APCPA = Data(x=x, edge_index=dense_to_sparse(APCPA.fill_diagonal_(1))[0], y=y)
-		# print(f'APA:{len(data_APA.edge_index[0])}')
-		# print(f'APTPA:{len(data_APTPA.edge_index[0])}')
-		# print(f'APCPA:{len(data_APCPA.edge_index[0])}')
-
-		# num_nodes = x.shape[0]
-		# float_mask = np.random.permutation(np.linspace(0, 1, num_nodes))
-
-		# train_idx = np.where(float_mask <= 0.2)[0]
-		# val_idx = np.where((float_mask > 0.2) & (float_mask <= 0.3))[0]
-		# test_idx = np.where(float_mask > 0.3)[0]
-		# train_mask = get_binary_mask(num_nodes, train_idx)
-		# val_mask = get_binary_mask(num_nodes, val_idx)
-		# test_mask = get_binary_mask(num_nodes, test_idx)
-
-		# np.save(f'train_mask_{seed}', train_mask.numpy())
-		# np.save(f'test_mask_{seed}', test_mask.numpy())
-		# np.save(f'val_mask_{seed}', val_mask.numpy())
-
-		# train_mask = torch.from_numpy(np.load('train_mask_42.npy', allow_pickle=True))
-		# val_mask = torch.from_numpy(np.load('val_mask_42.npy', allow_pickle=True))
-		# test_mask = torch.from_numpy(np.load('test_mask_42.npy', allow_pickle=True))
 
 		train_mask = dataset['author'].train_mask
 		val_mask = dataset['author'].val_mask
