@@ -21,4 +21,5 @@ These datasets include four medium-scale datasets. Please download them from pyt
 
 It is a large dataset from [OGB Challenge](https://ogb.stanford.edu/docs/leader_nodeprop/#ogbn-mag).
 
+---
 If you encounter any issues, please feel free to reach out to me at jshen2024@fau.edu.
