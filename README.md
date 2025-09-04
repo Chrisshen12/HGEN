@@ -1,5 +1,5 @@
 # HGEN
-Code of the paper: HGEN: Heterogeneous Graph Ensemble Networks
+Code of the paper: HGEN: Heterogeneous Graph Ensemble Networks.
 The camera-ready paper for IJCAI 25 can be found at: 
 
 ## Requirements
