@@ -18,6 +18,7 @@ Please check your cuda version first and install the above libraries matching yo
 These datasets include four medium-scale datasets. Please download them from pytorch geometric [pytorch-geometric-dataset](https://pytorch-geometric.readthedocs.io/en/2.5.3/modules/datasets.html#heterogeneous-datasets).
 
 * Ogbn-mag
+
 It is a large dataset from [OGB Challenge](https://ogb.stanford.edu/docs/leader_nodeprop/#ogbn-mag).
 ---
 
