@@ -14,10 +14,11 @@ Please check your cuda version first and install the above libraries matching yo
 ## Data preparation
 
 * HGB datasets for node classification
-* Ogbn-mag
 
 These datasets include four medium-scale datasets. Please download them from pytorch geometric [pytorch-geometric-dataset](https://pytorch-geometric.readthedocs.io/en/2.5.3/modules/datasets.html#heterogeneous-datasets).
 
+* Ogbn-mag
+It is a large dataset from [https://ogb.stanford.edu/docs/leader_nodeprop/#ogbn-mag).
 ---
 
 If you encounter any issues, please feel free to reach out to me at jshen2024@fau.edu.
